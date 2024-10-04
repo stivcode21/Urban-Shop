@@ -1,6 +1,6 @@
 import React from 'react'
-import { Hero, Sales } from './components'
-import { heroapi, popularsales, toprateslaes } from './data/data'
+import { FlexContent, Hero, Sales, Slider } from './components'
+import { heroapi, popularsales, toprateslaes, sneaker, highlight } from './data/data'
 
 
 const App = () => {
@@ -8,8 +8,11 @@ const App = () => {
     <>
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
-        <Sales endpoint={popularsales} ifExists />
-        <Sales endpoint={toprateslaes} />
+        <Sales data={popularsales} ifExists />
+        <FlexContent data={sneaker} />
+        <Sales data={toprateslaes} />
+        <FlexContent data={highlight} ifExists />
+        <Slider />
       </main>
     </>
   )

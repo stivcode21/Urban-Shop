@@ -44,7 +44,7 @@ const popularsales = {
     {
       id: "0p0x1",
       title: "Nike Addapt BB 2.0",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos deportivos",
       rating: "4.9",
       btn: "Comprar Ahora",
       img: psale2,
@@ -55,7 +55,7 @@ const popularsales = {
     {
       id: "0p0x2",
       title: "Nike Martine Rose",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "4.5",
       btn: "Comprar Ahora",
       img: psale1,
@@ -66,7 +66,7 @@ const popularsales = {
     {
       id: "0p0x3",
       title: "Nike Smart Shoe 2.0",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: psale3,
@@ -78,20 +78,20 @@ const popularsales = {
 };
 
 const highlight = {
-  heading: "HIGHLIGHTS",
-  title: "NIKE AIR WITH LIMITLESS CHOICES",
-  text: "Our Purpose is to move the world forward. We take action by building community, protecting our planet and increasing access to sport.",
-  btn: "Explore More",
-  url: "https://www.nike.com/launch/t/nocta-hot-step-black-gold",
+  heading: "PREVENTA",
+  title: "NIKE AIR CON OPCIONES ILIMITADAS",
+  text: "Nuestro Propósito es hacer avanzar al mundo. Actuamos construyendo comunidad, protegiendo nuestro planeta y aumentando el acceso al deporte.",
+  btn: "Explorar Producto",
+  url: "/",
   img: hightlightimg,
 };
 
 const sneaker = {
-  heading: "FEATURED",
-  title: "NIKE SNEAKERS AIR LANCING SHOES",
-  text: "The radiance lives on Nike Sneakers Air Lancing Shoes, the basket ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
-  btn: "Explore More",
-  url: "https://sneakernews.com/2022/03/21/nike-lebron-2-retro-white-midnight-navy-varsity-crimson-dr0826-100/",
+  heading: "PROMOCION",
+  title: "ZAPATILLAS NIKE ZAPATOS AIR LANZAMIENTO",
+  text: "El resplandor vive en los zapatos Nike Air Lancing, le dan un nuevo giro a lo que mejor conoces: super costuras duraderas, acabados limpios y la cantidad perfecta de brillo para hacerte brillar.",
+  btn: "Explorar Producto",
+  url: "/",
   img: sneakershoe,
 };
 
@@ -101,7 +101,7 @@ const toprateslaes = {
     {
       id: "0M0x1",
       title: "Nike Air Low Premium",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product7,
@@ -112,7 +112,7 @@ const toprateslaes = {
     {
       id: "0M0x2",
       title: "Nike Air Force Green",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product2,
@@ -123,7 +123,7 @@ const toprateslaes = {
     {
       id: "0M0x3",
       title: "Nike Addapt BB Rose",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product3,
@@ -134,7 +134,7 @@ const toprateslaes = {
     {
       id: "0M0x4",
       title: "Nike Air Premium",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product4,
@@ -145,7 +145,7 @@ const toprateslaes = {
     {
       id: "0M0x5",
       title: "Nike Adapt BB Pro",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product5,
@@ -156,7 +156,7 @@ const toprateslaes = {
     {
       id: "0M0x6",
       title: "Air Jordan PR3",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product6,
@@ -167,7 +167,7 @@ const toprateslaes = {
     {
       id: "0M0x7",
       title: "Nike Multi Smart Shoe",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product1,
@@ -178,7 +178,7 @@ const toprateslaes = {
     {
       id: "0M0x8",
       title: "Nike Jordan Air Max",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product9,
@@ -189,7 +189,7 @@ const toprateslaes = {
     {
       id: "0M0x9",
       title: "Nike Old Max-x",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product10,
@@ -200,7 +200,7 @@ const toprateslaes = {
     {
       id: "0M0x10",
       title: "Nike Lime Jordan 11",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product12,
@@ -211,7 +211,7 @@ const toprateslaes = {
     {
       id: "0M0x11",
       title: "Nike Air Black Max",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product11,
@@ -222,7 +222,7 @@ const toprateslaes = {
     {
       id: "0M0x12",
       title: "Nike Zoom Max",
-      text: "MEN Running Shoes",
+      text: "MEN Zapatos Deportivos",
       rating: "5+",
       btn: "Comprar Ahora",
       img: product8,

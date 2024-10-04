@@ -68,7 +68,7 @@
 
   /* text-gradient */
   .text-gradient {
-    @apply text-transparent bg-clip-text bg-gradient-to-tr from-blue-500 to-sky-500;
+    @apply text-transparent bg-clip-text bg-gradient-to-tr from-blue-500 to-blue-800;
   }
 
   /* border */
