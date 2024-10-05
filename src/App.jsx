@@ -1,6 +1,6 @@
 import React from 'react'
 import { FlexContent, Hero, Sales, Slider } from './components'
-import { heroapi, popularsales, toprateslaes, sneaker, highlight } from './data/data'
+import { heroapi, popularsales, toprateslaes, sneaker, highlight, story } from './data/data'
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
         <FlexContent data={sneaker} />
         <Sales data={toprateslaes} />
         <FlexContent data={highlight} ifExists />
-        <Slider />
+        <Slider data={story} />
       </main>
     </>
   )

@@ -27,6 +27,7 @@ const Hero = ({ heroapi: { title, subtitle, btntext, img, sociallinks } }) => {
                             ))}
                         </div>
                     </div>
+
                     <div className='flex items-center'>
                         <img
                             src={img}
