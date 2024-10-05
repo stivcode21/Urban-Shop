@@ -20,6 +20,10 @@ import product10 from "../assets/product10.png";
 import product11 from "../assets/product11.png";
 import product12 from "../assets/product12.png";
 
+import bgslider1 from "../assets/slider-bg1.png";
+import bgslider2 from "../assets/slider-bg2.png";
+import bgslider3 from "../assets/slider-bg3.png";
+
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
@@ -93,6 +97,21 @@ const sneaker = {
   btn: "Explorar Producto",
   url: "/",
   img: sneakershoe,
+};
+
+const slider = {
+  title: "Black friday",
+  items: [
+    {
+      img: bgslider1,
+    },
+    {
+      img: bgslider2,
+    },
+    {
+      img: bgslider3,
+    },
+  ],
 };
 
 const toprateslaes = {
@@ -362,4 +381,5 @@ export {
   highlight,
   toprateslaes,
   popularsales,
+  slider,
 };

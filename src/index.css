@@ -94,3 +94,13 @@
 .splide__arrow svg {
   @apply w-6 h-6; /* Ajustar tamaño del ícono de flecha */
 }
+
+/*SLIDER Cambia el color de los puntos inactivos */
+.splide__pagination__page {
+  @apply bg-gray-300; /* Color de los puntos inactivos */
+}
+
+/*SLIDER Cambia el color de los puntos activos */
+.splide__pagination__page.is-active {
+  @apply bg-yellow-500; /* Color del punto activo */
+}

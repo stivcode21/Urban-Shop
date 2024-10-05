@@ -1,13 +1,13 @@
 import React from 'react'
-import { FlexContent, Hero, Sales, Slider } from './components'
-import { heroapi, popularsales, toprateslaes, sneaker, highlight, story } from './data/data'
-
+import { FlexContent, Hero, Sales, Slider, AutoScrollSlider } from './components'
+import { heroapi, popularsales, toprateslaes, sneaker, highlight, story, slider } from './data/data'
 
 const App = () => {
   return (
     <>
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
+        <AutoScrollSlider data={slider} />
         <Sales data={popularsales} ifExists />
         <FlexContent data={sneaker} />
         <Sales data={toprateslaes} />
