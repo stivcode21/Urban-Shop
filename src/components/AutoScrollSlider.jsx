@@ -24,7 +24,7 @@ const AutoScrollSlider = ({ data: { items } }) => {
     };
 
     return (
-        <div className="mt-10 nike-container shadow-md">
+        <div className="mt-10 nike-container shadow-lg shadow-gray-600 blur-effect-theme overflow-hidden rounded-xl">
             <Splide options={splideOptions}>
                 {items.map((img, i) => (
                     <SplideSlide key={i}>
@@ -32,7 +32,7 @@ const AutoScrollSlider = ({ data: { items } }) => {
                             <img
                                 src={img.img}
                                 alt={`Slider ${i}`}
-                                className="w-full h-[150px] object-cover"  // Ocupa todo el ancho
+                                className="w-full h-[150px] object-cover rounded-xl"  // Ocupa todo el ancho
                             />
                         </div>
                     </SplideSlide>
