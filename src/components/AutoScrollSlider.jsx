@@ -9,7 +9,7 @@ const AutoScrollSlider = ({ data: { items } }) => {
         pagination: true,      // Ocultar indicadores de paginación
         perPage: 1,             // Mostrar solo 1 slide a la vez
         autoplay: true,         // Activar desplazamiento automático
-        interval: 3000,         // Intervalo de 3 segundos entre imágenes
+        interval: 2500,         // Intervalo de 3 segundos entre imágenes
         speed: 1000,            // Velocidad de transición suave entre imágenes (1 segundo)
         pauseOnHover: true,     // Pausar al hacer hover
         pauseOnFocus: true,     // Pausar al enfocar
@@ -24,7 +24,7 @@ const AutoScrollSlider = ({ data: { items } }) => {
     };
 
     return (
-        <div className="mt-10 nike-container shadow-lg shadow-gray-600 blur-effect-theme overflow-hidden rounded-xl">
+        <div className="mt-10 nike-container z-10 shadow-lg shadow-gray-600 blur-effect-theme overflow-hidden rounded-xl">
             <Splide options={splideOptions}>
                 {items.map((img, i) => (
                     <SplideSlide key={i}>

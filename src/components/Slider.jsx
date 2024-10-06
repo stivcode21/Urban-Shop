@@ -20,7 +20,7 @@ const Slider = ({ data: { title, news } }) => {
         breakpoints: {         // Configuración de diseño adaptable (responsive) para diferentes tamaños de pantalla.
             1200: { perPage: 3 },  // A partir de 1200px, muestra 3 elementos por página.
             991: { perPage: 2.3 }, // A partir de 991px, muestra 2.3 elementos por página.
-            768: { perPage: 2 },   // A partir de 768px, muestra 2 elementos por página.
+            768: { perPage: 1.5 },   // A partir de 768px, muestra 2 elementos por página.
             500: { perPage: 1.3 }, // A partir de 500px, muestra 1.3 elementos por página.
             425: { perPage: 1 },   // A partir de 425px, muestra 1 elemento por página.
         },
@@ -28,7 +28,7 @@ const Slider = ({ data: { title, news } }) => {
 
     return (
         <>
-            <div className="nike-container mb-11">
+            <div className="nike-container mb-11 z-10">
                 <Title title={title} />
                 <div className="mt-7">
                     <Splide options={splideOptions}>
@@ -55,7 +55,7 @@ const Slider = ({ data: { title, news } }) => {
                                         <p className="text-sm text-justify lg:text-xs">{val.text}</p>
                                     </div>
                                     <div className="flex items-center justify-between px-4 w-full">
-                                        <button className="w-[80%] bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center text-slate-100 py-1.5 button-theme">
+                                        <button className="w-[75%] bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center text-slate-100 py-1.5 button-theme">
                                             <a href={val.url} target="_blank" role={"button"} >{val.btn}</a>
                                         </button>
                                         <button type='button' className='bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center px-2 text-slate-100 py-1.5 button-theme'>

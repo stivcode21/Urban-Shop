@@ -9,7 +9,7 @@ const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, pric
                     <h1 className='text-slate-200 text-xl lg:text-lg md:text-base filter font-medium drop-shadow'>{title}</h1>
                     <p className='text-slate-200 filter drop-shadow text-base md:text-sm font-normal'>{text}</p>
 
-                    <div className='flex items-center justify-between w-36 my-2'>
+                    <div className='flex items-center justify-between w-36 my-2 z-10'>
                         <div className='flex items-center bg-white/80 px-1 rounded blur-effect-theme'>
                             <h1 className='text-black text-sm font-medium'>
                                 ${price}
@@ -23,7 +23,7 @@ const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, pric
                         </div>
                     </div>
 
-                    <div className='flex items-center gap-3 '>
+                    <div className='flex items-center gap-3 z-10'>
                         <button type='button' className='bg-white/90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200'>
                             <ShoppingCartIcon className='icon-style text-slate-900' />
                         </button>
