@@ -5,3 +5,4 @@ export { default as FlexContent } from "./FlexContent.jsx";
 export { default as Slider } from "./Slider.jsx";
 export { default as AutoScrollSlider } from "./AutoScrollSlider.jsx";
 export { default as Footer } from "./Footer.jsx";
+export { default as Cart } from "./Cart.jsx";
