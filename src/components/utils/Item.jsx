@@ -2,6 +2,7 @@ import { StarIcon, ShoppingCartIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 
 const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, price }) => {
+
     return (
         <>
             <div className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center ${ifExists ? 'justify-items-start' : 'justify-items-center'} rounded-xl py-4 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105`}>
