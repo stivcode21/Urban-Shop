@@ -8,7 +8,7 @@ const Item = ({ ifExists, id, color, shadow, title, text, img, btn, rating, pric
     const dispatch = useDispatch()
 
     const onAddtoCart = () => {
-        const item = { id, title, text, img, color, shadow, price }
+        const item = { id, title, img, color, shadow, price }
         dispatch(setAddItemToCart(item));
     }
 

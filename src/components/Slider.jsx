@@ -4,7 +4,8 @@ import StarRating from './utils/StarRating';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { Splide, SplideSlide } from '@splidejs/react-splide'; //libreria de sliders
 import '@splidejs/react-splide/css';
-
+import { useDispatch } from 'react-redux';
+import { setAddItemToCart } from '../app/CartSlice';
 
 
 const Slider = ({ data: { title, news } }) => {
@@ -26,39 +27,45 @@ const Slider = ({ data: { title, news } }) => {
         },
     };
 
+    const dispatch = useDispatch()
+
+    const onAddtoCart = (item) => {
+        dispatch(setAddItemToCart(item));
+    }
+
     return (
         <>
             <div className="nike-container mb-11 z-10">
                 <Title title={title} />
                 <div className="mt-7">
                     <Splide options={splideOptions}>
-                        {news.map((val, i) => (
+                        {news.map((item, i) => (
                             <SplideSlide key={i} className="mb-0.5">
                                 <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200">
                                     <div className="flex items-center justify-center">
                                         <img
-                                            src={val.img}
+                                            src={item.img}
                                             alt={`img/story/${i}`}
                                             className="w-full h-52 object-contain shadow-md shadow-slate-200 rounded-tl-lg rounded-tr-lg"
                                         />
                                     </div>
                                     <div className="flex items-center justify-between w-full px-4">
-                                        <StarRating rating={val.like} />
+                                        <StarRating rating={item.like} />
                                         <div className='flex items-center bg-white/80 px-1 rounded shadow shadow-gray-500 blur-effect-theme'>
                                             <h1 className='text-black text-sm font-medium'>
-                                                ${val.price}
+                                                ${item.price}
                                             </h1>
                                         </div>
                                     </div>
                                     <div className="grid items-center justify-items-start px-4">
-                                        <h1 className="text-base font-semibold lg:text-sm">{val.title}</h1>
-                                        <p className="text-sm text-justify lg:text-xs">{val.text}</p>
+                                        <h1 className="text-base font-semibold lg:text-sm">{item.title}</h1>
+                                        <p className="text-sm text-justify lg:text-xs">{item.text}</p>
                                     </div>
                                     <div className="flex items-center justify-between px-4 w-full">
                                         <button className="w-[75%] bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center text-slate-100 py-1.5 button-theme">
-                                            <a href={val.url} target="_blank" role={"button"} >{val.btn}</a>
+                                            <a href={item.url} target="/" role={"button"} >{item.btn}</a>
                                         </button>
-                                        <button type='button' className='bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center px-2 text-slate-100 py-1.5 button-theme'>
+                                        <button type='button' onClick={() => onAddtoCart(item)} className='bg-gradient-to-b from-slate-900 to-black shadow-md shadow-black text-center px-2 text-slate-100 py-1.5 button-theme'>
                                             <ShoppingCartIcon className='icon-style' />
                                         </button>
                                     </div>

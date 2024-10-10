@@ -3,11 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import CartCount from './cart/CartCount'
 import CartItem from './cart/CartItem'
 import CartEmpty from './cart/CartEmpty'
-import { selectCartState, setCloseCart } from '../app/CartSlice'
+import { selectCartItems, selectCartState, setCloseCart } from '../app/CartSlice'
 
 const Cart = () => {
     const dispatch = useDispatch();
     const ifCartState = useSelector(selectCartState)
+    const cartItems = useSelector(selectCartItems)
+
+    console.log(cartItems)
 
     const onCartToogle = () => {
         dispatch(setCloseCart({
@@ -22,8 +25,13 @@ const Cart = () => {
                 : 'opacity-0 invisible translate-x-8'}`}>
                 <div className={`blur-effect-theme h-screen max-w-xl w-full absolute right-0 `}>
                     <CartCount onCartToogle={onCartToogle} />
-                    <CartEmpty />
-                    <CartItem />
+                    {cartItems?.length === 0 ? <CartEmpty /> : <div>
+                        <div className='flex justify-start items-start flex-col gap-y-5'>
+                            {cartItems?.map((item, i) => (
+                                <CartItem key={i} item={item} />
+                            ))}
+                        </div>
+                    </div>}
                 </div>
             </div>
         </>

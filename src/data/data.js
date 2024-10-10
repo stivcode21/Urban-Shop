@@ -256,6 +256,7 @@ const story = {
   title: "Gorras",
   news: [
     {
+      id: 1,
       title: "Goorin Bros",
       text: "Gorra Beisbolera Camionero Colección Animal Farm",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_975245-MCO31005746477_062019-F.webp",
@@ -265,6 +266,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 2,
       title: "Goorin Bros",
       text: "Gorra Beisbolera Camionero Colección Animal Farm",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_607862-MCO31042397742_062019-F.webp",
@@ -274,6 +276,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 3,
       title: "Goorin Bros",
       text: "Gorra Queen Abeja Animal Ajustable - Original",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_621379-MCO52536677402_112022-F.webp",
@@ -283,6 +286,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 4,
       title: "Goorin Bros",
       text: "Gorra Tigre Blanco Tiger En Drill 100% Original",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_663935-MCO73279077555_122023-F.webp",
@@ -292,6 +296,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 5,
       title: "Goorin Bros",
       text: "Gorra King León 100% Original Nueva Colección",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_650453-MCO47260144387_082021-F.webp",
@@ -301,6 +306,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 6,
       title: "Goorin Bros",
       text: "Gorra Goorin Bros Black Panther nueva coleccion",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_968720-MCO47566021450_092021-F.webp",
@@ -310,6 +316,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 7,
       title: "Goorin Bros",
       text: "Gorra Vaca Cash Dinero Ganado Animal - Original",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_664362-MCO53484378779_012023-F.webp",
@@ -319,6 +326,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 8,
       title: "Goorin Bros",
       text: "Gorra Tigre Silver Tiger Negro 100% Original",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_987109-MCO47565904302_092021-F.webp",
@@ -328,6 +336,7 @@ const story = {
       btn: "Comprar Ahora",
     },
     {
+      id: 9,
       title: "Goorin Bros",
       text: "Gorra Moon Lover Wolf Lobo 100% Original",
       img: "https://http2.mlstatic.com/D_NQ_NP_2X_828306-MCO71566770066_092023-F.webp",
