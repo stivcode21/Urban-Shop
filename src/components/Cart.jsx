@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import CartCount from './cart/CartCount'
 import CartItem from './cart/CartItem'
 import CartEmpty from './cart/CartEmpty'
-import { selectCartItems, selectCartState, setCloseCart } from '../app/CartSlice'
+import { selectCartItems, selectCartState, selectTotalAmount, selectTotalQTY, setClearCartItems, setCloseCart, setGetTotals } from '../app/CartSlice'
 
 const Cart = () => {
     const dispatch = useDispatch();
     const ifCartState = useSelector(selectCartState)
     const cartItems = useSelector(selectCartItems)
+    const totalAmount = useSelector(selectTotalAmount)
+    const totalQTY = useSelector(selectTotalQTY)
+    //console.log(cartItems)
 
-    console.log(cartItems)
+    useEffect(() => {
+        dispatch(setGetTotals())
+    }, [cartItems, dispatch])
 
     const onCartToogle = () => {
         dispatch(setCloseCart({
             cartState: false
         }))
+    }
+
+    const onClearCart = () => {
+        dispatch(setClearCartItems())
     }
 
     return (
@@ -24,8 +33,8 @@ const Cart = () => {
                 ? 'opacity-100 visible translate-x-0'
                 : 'opacity-0 invisible translate-x-8'}`}>
                 <div className={`blur-effect-theme h-screen max-w-xl w-full absolute right-0 `}>
-                    <CartCount onCartToogle={onCartToogle} />
-                    {cartItems?.length === 0 ? <CartEmpty /> : <div>
+                    <CartCount totalQTY={totalQTY} onCartToogle={onCartToogle} onClearCart={onClearCart} />
+                    {cartItems?.length === 0 ? <CartEmpty onCartToogle={onCartToogle} /> : <div>
                         <div className='flex justify-start items-start flex-col gap-y-5 overflow-y-scroll h-[81vh] scroll-smooth scroll-hidden py-4'>
                             {cartItems?.map((item, i) => (
                                 <CartItem key={i} item={item} />
@@ -36,7 +45,7 @@ const Cart = () => {
                                 <div className="flex items-center justify-between">
                                     <h1 className="text-base font-semibold uppercase">SubTotal</h1>
                                     <h1 className="text-sm rounded bg-theme-cart text-slate-100 px-1 py-0.5">
-                                        ${ } {/* Muestra el total calculado */}
+                                        ${totalAmount}.000
                                     </h1>
                                 </div>
                                 <div className="grid items-center gap-2">
