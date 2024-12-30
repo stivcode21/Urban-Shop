@@ -9,7 +9,7 @@ const App = () => {
       <Cart />
       <main className='flex flex-col gap-16 relative'>
         <Hero heroapi={heroapi} />
-        <AutoScrollSlider data={slider} />
+        {/* <AutoScrollSlider data={slider} /> */}
         <Sales data={popularsales} ifExists />
         <FlexContent data={sneaker} />
         <Sales data={toprateslaes} />
