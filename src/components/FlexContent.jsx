@@ -1,4 +1,3 @@
-import React from 'react'
 
 const FlexContent = ({ ifExists, data: { title, heading, text, img, btn, url } }) => {
     return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import SocialLink from './utils/SocialLink';
 
 const Hero = ({ heroapi: { title, subtitle, btntext, img, sociallinks } }) => {

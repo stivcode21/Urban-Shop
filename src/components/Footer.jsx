@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Footer = ({ footerAPI: { titles, links } }) => {
     const [Year, setYear] = useState(); // Hook useState para guardar el año actual

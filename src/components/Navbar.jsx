@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/react/24/outline'
-import logo from '../assets/logo.png';
+import logo from '/urbanShop.png';
 import { selectTotalQTY, setOpenCart } from '../app/CartSlice';
 
 const Navbar = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <div>
                         <img src={logo}
                             alt="logo/img"
-                            className={`w-16 h-auto ${navState && "filter brightness-0"}`} />
+                            className={`w-16 h-8 object-cover ${navState && "filter brightness-0"}`} />
                     </div>
                     <ul className='flex items-center justify-center gap-4'>
                         <li className='items-center'>

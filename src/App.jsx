@@ -1,4 +1,3 @@
-import React from 'react'
 import { FlexContent, Hero, Sales, Slider, AutoScrollSlider, Footer, Navbar, Cart } from './components'
 import { heroapi, popularsales, toprateslaes, sneaker, highlight, story, slider, footerAPI } from './data/data'
 

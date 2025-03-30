@@ -1,4 +1,3 @@
-import React from 'react'
 import Title from './utils/Title'
 import StarRating from './utils/StarRating';
 import { ShoppingCartIcon } from '@heroicons/react/24/solid';
